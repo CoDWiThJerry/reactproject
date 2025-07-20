@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+a img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar{
+width: 100%;  
+padding: 0% 10%;
+background:white;
+height: 50px;
+box-shadow: 0px 1px 10px rgb(209, 186, 211);
+
+}
+.navbar-collapse {
+flex-grow:0;
+    
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    font-weight: 700;
+}
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  border-bottom: 2px solid var(--bs-success);
+  color: var(--bs-success) !important;
+}
+
+
+
+.navbar-brand{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+    
+.slide-contaniner{
+    width: 100%;
+    height: 500px;
+  
+}
+
+
+
+
+/* cards section */
+.card-section {
+  max-width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.min-sec {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: center;
+}
+
+.mini-card1,
+.mini-card2 {
+  width: 49.5%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.mini-card1 {
+  background-image: url('./Component/background2.jpg');
+}
+
+.mini-card2 {
+  background-image: url('./Component/background5.jpg');
+}
+
+.content {
+  width: 100%;
+  padding:18.7% 5%;
+
+}
+
+.card-h2,
+.card-h1,
+.card-h3 {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+.card-h2 {
+  font-size: 1.6em;
+}
+
+.card-h1 {
+  font-size: 2.2em;
+}
+
+.card-h3 {
+  font-size: 1.2em;
+}
+
+/* Common transition for both buttons */
+.btn1,
+.btn2 {
+  width: 100px;
+  height: 35px;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Button 1 (filled) */
+.btn1 {
+  background: rgb(28, 137, 124);
+  border: none;
+  color: white;
+}
+
+.btn1:hover {
+  background-color: rgb(22, 105, 95);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(28, 137, 124, 0.4);
+}
+
+/* Button 2 (outlined) */
+.btn2 {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn2:hover {
+  background-color: white;
+  color: rgb(28, 137, 124);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+/* Slider Image */
+.carousel-image {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Caption text (left-aligned) */
+.carousel-caption {
+  left: 5%;
+  bottom: 20%;
+  text-align: left;
+}
+
+/* Make sure carousel position is relative for arrows */
+.carousel {
+  position: relative;
+}
+
+/* Customize arrow buttons */
+.carousel-arrows button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Customize arrow icons */
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  font-family: "Font Awesome 6 Free", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.carousel-control-prev-icon::after {
+  content: "<";
+}
+
+.carousel-control-next-icon::after {
+  content: ">";
+}
+
+
+
+
+
+/* our  product  */
+.page1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}
+.color{
+    color: #3fb7b7;
+}
+.text1{
+ 
+      text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800; 
+}
+
+.pera{
+    color: white;
+}
+
+.p{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    color:white; 
+}
+.scroll-container {
+  overflow-x: auto;
+  padding-bottom: 10px;
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: white;
+    padding: 10px 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ✅ Responsive Media Query */
+@media (max-width: 768px) {
+   .min-sec {
+    width: 93%;
+  
+}
+  .mini-card1,
+  .mini-card2 {
+    width: 100%;
+    height: 300px;
+    margin-top: 5px;
+  }
+
+  .card-h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-h2,
+  .card-h3 {
+    font-size: 1rem;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 90px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+
+  .content {
+    padding: 15% 5%;
+  }
+}
